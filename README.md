@@ -7,7 +7,7 @@
 * Install the same version for ybansan/crestapps-bootstrap4-templates
 Example:
 ```
-composer require ybansan/crestapps-bootstrap4-templates:2.2
+composer require ybansan/crestapps-bootstrap4-templates:^2.2
 ```
 * Copy the templates from the vendor/ybansan/templates directory to the templates directory of the crestApps generator.
 * Modify the code generator configuration file (laravel-code-generator.php) and including this code (see example in the the project config folder):
