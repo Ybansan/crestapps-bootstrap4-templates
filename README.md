@@ -17,7 +17,9 @@
 Example:
 php artisan create:resources Foo --template-name=default-collective-bootstrap4
 	
-The Bootrstrap 4 templates were made from a copy of the CrestApps templates (Bootrstrap 3) which I modified some files.
+Since **Glyphicons** were dropped from Bootstrap 4 these templates use **Fonts Awesome** instead.
+
+The Bootrstrap 4 templates were made from a copy of the CrestApps v.2.2 templates (Bootrstrap 3) which I modified some files.
 Compared to CrestApps template only a few files changed:
 * create.blade.stub
 * edit.blade.stub
@@ -25,5 +27,3 @@ Compared to CrestApps template only a few files changed:
 * layout.stub
 * layout-with-validation.stub
 * show.blade.stub
-```
-Since Glyphicons were dropped from Bootstrap 4 these templates use Fonts Awesome instead.
