@@ -15,7 +15,7 @@
 
 * Generate the ressources from command line including the Bootstrap 4 template in parameter.
 Example:
-php artisan create:resources Foo --template-name=default-collective-bootstrap4
+    php artisan create:resources Foo --template-name=default-collective-bootstrap4
 	
 Since **Glyphicons** were dropped from Bootstrap 4 these templates use **Fonts Awesome** instead.
 
