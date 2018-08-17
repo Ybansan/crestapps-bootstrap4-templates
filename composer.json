@@ -17,6 +17,5 @@
         }
     ],
     "require": {
-        "crestapps-bootstrap4-templates": "^0.1"
     }
 }
