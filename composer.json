@@ -17,6 +17,7 @@
         }
     ],
     "require": {
-            "crestapps/laravel-code-generator": "^2.2"
+            "crestapps/laravel-code-generator": "^2.2",
+            "require ybansan/crestapps-bootstrap4-templates:^2.2"
     }
 }
