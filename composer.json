@@ -17,6 +17,6 @@
         }
     ],
     "require": {
-            "crestapps/laravel-code-generator": "^2.2.0"
+            "crestapps/laravel-code-generator": "^2.2"
     }
 }
