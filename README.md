@@ -12,12 +12,12 @@
         'default-collective-bootstrap4',
     ],
 ```
-
 * Generate the ressources from command line including the Bootstrap 4 template in parameter.
 
 Example:
-    php artisan create:resources Foo --template-name=default-collective-bootstrap4
-	
+```
+php artisan create:resources Foo --template-name=default-collective-bootstrap4
+```	
 Since **Glyphicons** were dropped from Bootstrap 4 these templates use **Fonts Awesome** instead.
 
 The Bootrstrap 4 templates were made from a copy of the CrestApps v.2.2 templates (Bootrstrap 3) which I modified some files.
