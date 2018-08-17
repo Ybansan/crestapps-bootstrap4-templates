@@ -1,0 +1,22 @@
+{
+    "name": "crestapps-bootstrap4-templates",
+    "license": "MIT",
+    "description": "Bootstrap 4 templates for the excellent code Generator v.2.2 from CrestApps",
+    "version": "v0.1",
+    "keywords": [
+        "laravel","Bootstrap 4","template","templates","crud","crud generator",
+        "laravel crud generator","laravel crud builder",
+        "crud builder","code generator","generators","generator",
+        "code generator", "laravel crud","laravel code generator",
+        "laravel-code-generator","code-generator","CrestApps","Ybansan"
+    ],
+    "authors": [
+        {
+            "name": "Ybansan",
+            "email": "ybansan@123mail.org"
+        }
+    ],
+    "require": {
+        "crestapps-bootstrap4-templates": "~0.1"
+    },
+}
