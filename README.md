@@ -5,6 +5,7 @@
 * Install Laravel
 * Install a version of crestApps/laravel-code-generator
 * Install the same version for ybansan/crestapps-bootstrap4-templates
+
 Example:
 ```
 composer require ybansan/crestapps-bootstrap4-templates:^2.2
@@ -18,6 +19,7 @@ composer require ybansan/crestapps-bootstrap4-templates:^2.2
     ],
 ```
 * Generate the ressources from command line including the Bootstrap 4 template in parameter
+
 Example:
 ```
 php artisan create:resources Foo --template-name=default-collective-bootstrap4
