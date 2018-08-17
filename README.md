@@ -3,10 +3,11 @@
 # Bootstrap 4 templates for the excellent code Generator from CrestApps
 
 * Install Laravel
-* Install crestApps/laravel-code-generator
-* Install ybansan/crestapps-bootstrap4-templates
+* Install a version of crestApps/laravel-code-generator
+* Install the same version for ybansan/crestapps-bootstrap4-templates
+Example:
 ```
-composer require ybansan/crestapps-bootstrap4-templates
+composer require ybansan/crestapps-bootstrap4-templates:2.2
 ```
 * Copy the templates from the vendor/ybansan/templates directory to the templates directory of the crestApps generator.
 * Modify the code generator configuration file (laravel-code-generator.php) and including this code (see example in the the project config folder):
@@ -23,7 +24,7 @@ php artisan create:resources Foo --template-name=default-collective-bootstrap4
 ```	
 Since **Glyphicons** were dropped from Bootstrap 4 these templates use **Fonts Awesome** instead.
 
-The Bootrstrap 4 templates were made from a copy of the CrestApps v.2.2 templates (Bootrstrap 3) which I modified some files.
+My Bootrstrap 4 templates were made from a copy of the Bootrstrap 3 CrestApps templates which I modified some files.
 Compared to CrestApps template only a few files changed:
 * create.blade.stub
 * edit.blade.stub
