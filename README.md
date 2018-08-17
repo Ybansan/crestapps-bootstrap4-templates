@@ -26,7 +26,7 @@ php artisan create:resources Foo --template-name=default-collective-bootstrap4
 ```	
 Since **Glyphicons** were dropped from Bootstrap 4 these templates use **Fonts Awesome** instead.
 
-My Bootrstrap 4 templates were made from a copy of the Bootrstrap 3 CrestApps templates which I modified some files.
+Bootrstrap 4 templates were made from a copy of the Bootrstrap 3 CrestApps templates which I modified some files.
 Compared to CrestApps template only a few files changed:
 * create.blade.stub
 * edit.blade.stub
