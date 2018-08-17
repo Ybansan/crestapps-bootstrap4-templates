@@ -1,6 +1,6 @@
 ## crestapps-bootstrap4-templates
 
-# Bootstrap 4 templates for the excellent code Generator v.2.2 from CrestApps
+# Bootstrap 4 templates for the excellent code Generator from CrestApps
 
 * Install Laravel
 * Install crestApps/laravel-code-generator
