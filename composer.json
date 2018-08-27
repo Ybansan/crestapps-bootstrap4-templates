@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ybansan\\Crestapps-bootstrap4-templates\\CodeGeneratorTemplatesB4ServiceProvider"
+                "Ybansan\\CrestappsBotstrap4Templates\\CodeGeneratorTemplatesB4ServiceProvider"
             ]
         }
     }

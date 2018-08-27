@@ -1,6 +1,6 @@
 <?php
 
-namespace Ybansan\Crestapps-bootstrap4-templates;
+namespace Ybansan\CrestappsBotstrap4Templates;
 
 use File;
 use Illuminate\Support\ServiceProvider;
