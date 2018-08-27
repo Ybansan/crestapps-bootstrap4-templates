@@ -5,7 +5,7 @@ namespace Ybansan\CrestappsBootstrap4Templates;
 use File;
 use Illuminate\Support\ServiceProvider;
 
-class CrestappsBootstrap4Templates extends ServiceProvider
+class CrestappsBootstrap4TemplatesServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
