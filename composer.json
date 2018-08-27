@@ -18,5 +18,12 @@
     ],
     "require": {
             "crestapps/laravel-code-generator": "^2.2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ybansan\\Crestapps-bootstrap4-templates\\CodeGeneratorTemplatesB4ServiceProvider"
+            ]
+        }
     }
 }

@@ -14,7 +14,7 @@ composer require ybansan/crestapps-bootstrap4-templates:2.2
 ```php
     'laravel_collective_templates' => [
         'default-collective',
-        'default-collective-bootstrap4',
+        'collective-bootstrap4',
     ],
 ```
 * Generate the ressources from command line including the Bootstrap 4 template in parameter.
