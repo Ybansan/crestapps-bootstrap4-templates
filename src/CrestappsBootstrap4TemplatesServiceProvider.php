@@ -1,11 +1,11 @@
 <?php
 
-namespace Ybansan\CrestappsBotstrap4Templates;
+namespace Ybansan\CrestappsBootstrap4Templates;
 
 use File;
 use Illuminate\Support\ServiceProvider;
 
-class CodeGeneratorTemplatesB4ServiceProvider extends ServiceProvider
+class CrestappsB4TemplatesServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
