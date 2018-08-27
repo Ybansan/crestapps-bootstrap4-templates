@@ -2,11 +2,10 @@
 
 namespace Ybansan\Crestapps-bootstrap4-templates;
 
-use Ybansan\CodeGenerator\Support\Helpers;
 use File;
 use Illuminate\Support\ServiceProvider;
 
-class CodeGeneratorServiceProvider extends ServiceProvider
+class CodeGeneratorTemplatesB4ServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
