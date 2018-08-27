@@ -33,6 +33,7 @@ class CrestappsBootstrap4TemplatesServiceProvider extends ServiceProvider
         $this->publishes([
             $dir . 'templates/bootstrap4' => $this->codeGeneratorBase('templates/bootstrap4'),
         ], 'bootstrap4');
+    }
 
     /**
      * Register the service provider.
