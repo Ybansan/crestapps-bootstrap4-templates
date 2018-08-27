@@ -19,6 +19,11 @@
     "require": {
             "crestapps/laravel-code-generator": "^2.2.0"
     },
+    "autoload": {
+        "psr-4": {
+            "Ybansan\\CrestappsBotstrap4Templates\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
