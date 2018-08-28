@@ -3,31 +3,35 @@
 # Bootstrap 4 templates for the excellent code Generator from CrestApps
 
 * Install Laravel
-* Install a version of crestApps/laravel-code-generator
+* Install a version of crestApps/laravel-code-generator (https://crestapps.com/)
+* Publish the laravel-code-generator resources (config and templates, see the package documentation)
 * Install the same version for ybansan/crestapps-bootstrap4-templates
 
 Example:
 ```
 composer require ybansan/crestapps-bootstrap4-templates:^2.2
 ```
-* Copy the templates from the vendor/ybansan/templates directory to the templates directory of the crestApps generator.
-* Modify the code generator configuration file (laravel-code-generator.php) and including this code (see example in the the project config folder):
-```php
-    'laravel_collective_templates' => [
-        'default-collective',
-        'collective-bootstrap4',
-    ],
+* Publish the package resources
+
+To publish the simple bootstrap4 template :
 ```
-* Generate the ressources from command line including the Bootstrap 4 template in parameter
+php artisan vendor:publish --provider="Ybansan\CrestappsBootstrap4Templates\CrestTemplatesServiceProvider" --tag="bootstrap4"
+```
+
+To publish the collective bootstrap4 template :
+```
+php artisan vendor:publish --provider="Ybansan\CrestappsBootstrap4Templates\CrestTemplatesServiceProvider" --tag="collective-bootstrap4"
+```
+* Generate the ressources with the laravel-code-generator from command line indicating the template of your choice in a parameter.
 
 Example:
 ```
-php artisan create:resources Foo --template-name=default-collective-bootstrap4
+php artisan create:resources Foo --template-name=collective-bootstrap4
 ```	
-Since **Glyphicons** were dropped from Bootstrap 4 these templates use **Fonts Awesome** instead.
+Since **Glyphicons** were dropped from Bootstrap 4 the templates now use **Fonts Awesome** instead.
 
-Bootrstrap 4 templates were made from a copy of the Bootrstrap 3 CrestApps templates which I modified some files.
-Compared to CrestApps template only a few files changed:
+Bootrstrap 4 templates were made from a copy of the default Bootrstrap 3 CrestApps templates, which only some files were modified.
+Compared to CrestApps template these files changed:
 * create.blade.stub
 * edit.blade.stub
 * index.blade.stub
