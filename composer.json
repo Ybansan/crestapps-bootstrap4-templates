@@ -24,6 +24,14 @@
             "Ybansan\\CrestappsBootstrap4Templates\\": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "composer dump-autoload"
+        ],
+        "post-update-cmd": [
+            "composer dump-autoload"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
