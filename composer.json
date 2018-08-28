@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Ybansan\\CrestappsBotstrap4Templates\\": "src/"
+            "Ybansan\\CrestappsBootstrap4Templates\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ybansan\\CrestappsBotstrap4Templates\\CrestappsBootstrap4TemplatesServiceProvider"
+                "Ybansan\\CrestappsBootstrap4Templates\\CrestTemplatesServiceProvider"
             ]
         }
     }

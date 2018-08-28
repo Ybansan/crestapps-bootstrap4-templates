@@ -5,7 +5,7 @@ namespace Ybansan\CrestappsBootstrap4Templates;
 use File;
 use Illuminate\Support\ServiceProvider;
 
-class CrestappsBootstrap4TemplatesServiceProvider extends ServiceProvider
+class CrestTemplatesServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -40,9 +40,9 @@ class CrestappsBootstrap4TemplatesServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-    }
+    // public function register()
+    // {
+    // }
 
     /**
      * Create a directory if one does not already exists
