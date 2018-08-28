@@ -16,16 +16,6 @@ class CrestTemplatesServiceProvider extends ServiceProvider
     {
         $dir = __DIR__ . '/../';
 
-        if (!File::exists(config_path('codegenerator_custom.php'))) {
-            $this->publishes([
-                $dir . 'config/codegenerator_custom.php' => config_path('codegenerator_custom.php'),
-            ]);
-        } else {
-			$this->mergeConfigFrom(
-				$dir . 'config/codegenerator_custom.php', 'codegenerator_custom'
-			);			
-		}
-		
         $this->publishes([
             $dir . 'templates/collective-bootstrap4' => $this->codeGeneratorBase('templates/collective-bootstrap4'),
         ], 'collective-bootstrap4');
@@ -40,9 +30,14 @@ class CrestTemplatesServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    // public function register()
-    // {
-    // }
+    public function register()
+    {
+        $dir = __DIR__ . '/../';
+        
+        $this->mergeConfigFrom(
+            $dir . 'config/laravel_collective_templates.php', 'codegenerator.laravel_collective_templates'
+        );
+    }
 
     /**
      * Create a directory if one does not already exists
