@@ -1,1 +1,1 @@
-return \DateTime::createFromFormat('[% date_format %]', $value);
+return date('[% date_format %]', strtotime($value));

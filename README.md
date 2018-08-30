@@ -9,9 +9,9 @@
 
 Example:
 ```
-composer require ybansan/crestapps-bootstrap4-templates:^2.2
+composer require ybansan/crestapps-bootstrap4-templates:^2.2 --dev
 ```
-* Publish the package resources
+* Publish the package templates
 
 To publish the simple bootstrap4 template :
 ```
@@ -22,11 +22,12 @@ To publish the collective bootstrap4 template :
 ```
 php artisan vendor:publish --provider="Ybansan\CrestappsBootstrap4Templates\CrestTemplatesServiceProvider" --tag="collective-bootstrap4"
 ```
-* Generate the ressources with the laravel-code-generator from command line indicating the template of your choice in a parameter.
+* Generate the ressources and the layout with the laravel-code-generator from command line indicating the template of your choice in a parameter.
 
 Example:
 ```
 php artisan create:resources Foo --template-name=collective-bootstrap4
+php artisan create:layout MyApp --template-name=collective-bootstrap4
 ```	
 Since **Glyphicons** were dropped from Bootstrap 4 the templates now use **Fonts Awesome** instead.
 

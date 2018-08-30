@@ -24,11 +24,9 @@ class [% form_request_class %] extends FormRequest
      */
     public function rules()
     {
-        $rules = [
-[% validation_rules %]
+        return [
+    [% validation_rules %]
         ];
-[% file_validation_snippet %]
-        return $rules;
     }
 [% get_data_method %]
 [% upload_method %]

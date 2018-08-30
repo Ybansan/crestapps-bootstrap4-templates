@@ -2,28 +2,26 @@
 
 @section('content')
 
-    <div class="panel panel-default">
+    <div class="card">
+  
+        <div class="card-header">
 
-        <div class="panel-heading clearfix">
+            <h5  class="my-1 float-left">{{ !empty([% model_header %]) ? [% model_header %] : '[% model_name_title %]' }}</h5>
 
-            <div class="pull-left">
-                <h4 class="mt-5 mb-5">{{ !empty([% model_header %]) ? [% model_header %] : '[% model_name_title %]' }}</h4>
-            </div>
-
-            <div class="btn-group btn-group-sm pull-right" role="group">
+            <div class="btn-group btn-group-sm float-right" role="group">
 
                 <a href="{{ route('[% index_route_name %]') }}" class="btn btn-primary" title="[% show_all_models %]">
-                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                    <i class=" fas fa-fw fa-th-list" aria-hidden="true"></i>
                 </a>
 
-                <a href="{{ route('[% create_route_name %]') }}" class="btn btn-primary" title="[% create_model %]">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <a href="{{ route('[% create_route_name %]') }}" class="btn btn-success" title="[% create_model %]">
+                    <i class=" fas fa-fw fa-plus" aria-hidden="true"></i>
                 </a>
 
             </div>
         </div>
 
-        <div class="panel-body">
+        <div class="card-body">
 
             @if ($errors->any())
                 <ul class="alert alert-danger">
@@ -33,24 +31,19 @@
                 </ul>
             @endif
 
-            {!! Form::model($[% model_name_singular_variable %], [
-                'method' => 'PUT',
-                'route' => ['[% update_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]],
-                'class' => 'form-horizontal',
-                'name' => '[% form_name %]',
-                'id' => '[% form_id %]',
-                [% upload_files %]
-            ]) !!}
+            <form method="POST" action="{{ route('[% update_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]) }}" id="[% form_id %]" name="[% form_name %]" accept-charset="UTF-8" class="form-horizontal"[% upload_files %]>
+            {{ csrf_field() }}
+            <input name="_method" type="hidden" value="PUT">
+            @include ('[% form_view_name %]', [
+                                        '[% model_name_singular_variable %]' => $[% model_name_singular_variable %],
+                                      ])
 
-            @include ('[% form_view_name %]', ['[% model_name_singular_variable %]' => $[% model_name_singular_variable %],])
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    {!! Form::submit([% update %], ['class' => 'btn btn-primary']) !!}
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input class="btn btn-primary" type="submit" value="[% update %]">
+                    </div>
                 </div>
-            </div>
-
-            {!! Form::close() !!}
+            </form>
 
         </div>
     </div>

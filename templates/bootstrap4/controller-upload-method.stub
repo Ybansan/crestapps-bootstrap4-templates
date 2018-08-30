@@ -13,7 +13,7 @@
         }
         
         $fileName = sprintf('%s.%s', uniqid(), $file->getClientOriginalExtension());
-        $destinationPath = config('laravel-code-generator.files_upload_path','uploads');
+        $destinationPath = config('codegenerator.files_upload_path');
         $path = $file->move($destinationPath, $fileName);
         
         return $destinationPath . '/' . $fileName;
