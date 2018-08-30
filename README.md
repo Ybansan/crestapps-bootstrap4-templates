@@ -13,12 +13,12 @@ composer require ybansan/crestapps-bootstrap4-templates:^2.2 --dev
 ```
 * Publish the package templates
 
-To publish the simple bootstrap4 template :
+To publish the simple bootstrap 4 template :
 ```
 php artisan vendor:publish --provider="Ybansan\CrestappsBootstrap4Templates\CrestTemplatesServiceProvider" --tag="bootstrap4"
 ```
 
-To publish the collective bootstrap4 template :
+To publish the collective bootstrap 4 template :
 ```
 php artisan vendor:publish --provider="Ybansan\CrestappsBootstrap4Templates\CrestTemplatesServiceProvider" --tag="collective-bootstrap4"
 ```
