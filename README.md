@@ -5,11 +5,13 @@
 * Install Laravel
 * Install a version of crestApps/laravel-code-generator (https://crestapps.com/)
 * Publish the laravel-code-generator resources (config and templates, see the package documentation)
-* Install the same version for ybansan/crestapps-bootstrap4-templates
+* Check the version of crestApps/laravel-code-generator installed. This information is in the file [your project]/vendor/crestapps/laravel-code-generator/composer.json
+* Check the available versions in https://github.com/Ybansan/crestapps-bootstrap4-templates/releases.
+* If it exist, install the same version for ybansan/crestapps-bootstrap4-templates, otherwise choose the nearest lower version, with the same two firt digits.   
 
-Example:
+Example, if the version is "v2.2.12" in laravel-code-generator composer.json file :
 ```
-composer require ybansan/crestapps-bootstrap4-templates:^2.2 --dev
+composer require ybansan/crestapps-bootstrap4-templates:2.2.11 --dev
 ```
 * Publish the package templates
 

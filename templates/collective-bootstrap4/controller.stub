@@ -3,7 +3,6 @@
 namespace [% namespace %];
 
 [% use_command_placeholder %]
-use Exception;
 
 class [% controller_name %] [% controller_extends %]
 {
