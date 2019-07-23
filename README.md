@@ -37,6 +37,7 @@ Bootrstrap 4 templates were made from a copy of the default Bootrstrap 3 CrestAp
 Compared to CrestApps template these files changed:
 * create.blade.stub
 * edit.blade.stub
+* form-helper-field.blade.stub
 * index.blade.stub
 * layout.stub
 * layout-with-validation.stub
