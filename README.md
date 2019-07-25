@@ -2,7 +2,7 @@
 
 # Bootstrap 4 templates for the excellent code Generator from CrestApps
 
-* Install Laravelw
+* Install Laravel
 * Install a version of crestApps/laravel-code-generator (https://crestapps.com/)
 * Publish the laravel-code-generator resources (config and templates, see the package documentation)
 * Check the version of crestApps/laravel-code-generator installed. This information is in the file [your project]/vendor/crestapps/laravel-code-generator/composer.json
