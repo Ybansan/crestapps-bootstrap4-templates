@@ -57,13 +57,6 @@ class CrestTemplatesServiceProvider extends ServiceProvider
      */
     protected function codeGeneratorBase($path = null)
     {
-        
-        $dir = __DIR__ . '/../';
-        
-        $this->mergeConfigFrom(
-            $dir . 'config/laravel_collective_templates.php', 'codegenerator_custom'
-        );
-
         return base_path('resources/laravel-code-generator/') . $path;
     }
 }
