@@ -34,7 +34,12 @@ Your Laravel project should have crestapps/laravel-code-generator package alread
     ```
     php artisan create:resources Foo --template-name=collective-bootstrap4
     php artisan create:layout MyApp --template-name=collective-bootstrap4
-    ```	
+    ```
+
+The package contains two templates wich names are:
+
+* bootstrap4
+* collective-bootstrap4
 
 Since **Glyphicons** were dropped from Bootstrap 4 the templates now use **Fonts Awesome** instead.
 
