@@ -18,11 +18,10 @@ class CrestTemplatesServiceProvider extends ServiceProvider
 
         $this->publishes([
             $dir . 'templates/collective-bootstrap4' => $this->codeGeneratorBase('templates/collective-bootstrap4'),
-        ], 'collective-bootstrap4');
-
-        $this->publishes([
+            base_path('vendor/crestapps/laravel-code-generator/templates/default-collective')  => $this->codeGeneratorBase('templates/collective-bootstrap4'),
             $dir . 'templates/bootstrap4' => $this->codeGeneratorBase('templates/bootstrap4'),
-        ], 'bootstrap4');
+            base_path('vendor/crestapps/laravel-code-generator/templates/default')  => $this->codeGeneratorBase('templates/bootstrap4'),
+        ]);
     }
 
     /**
@@ -32,11 +31,7 @@ class CrestTemplatesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $dir = __DIR__ . '/../';
-        
-        $this->mergeConfigFrom(
-            $dir . 'config/laravel_collective_templates.php', 'codegenerator.laravel_collective_templates'
-        );
+
     }
 
     /**
@@ -62,6 +57,13 @@ class CrestTemplatesServiceProvider extends ServiceProvider
      */
     protected function codeGeneratorBase($path = null)
     {
+        
+        $dir = __DIR__ . '/../';
+        
+        $this->mergeConfigFrom(
+            $dir . 'config/laravel_collective_templates.php', 'codegenerator_custom'
+        );
+
         return base_path('resources/laravel-code-generator/') . $path;
     }
 }
