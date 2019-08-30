@@ -19,7 +19,7 @@ Your Laravel project should have crestapps/laravel-code-generator package alread
 
 3. Update the Code Generator custom config file.
 
-    * Edit the config file: [your_project_folder]\config\codegenerator_custom.php (version 2.2.*) or ...\laravel-code-generator.php (version 2.3.*)
+    * Edit the config file: [your_project_folder]\config\codegenerator_custom.php (version 2.2.\*) or ...\laravel-code-generator.php (version 2.3.\*)
     * Add this key:
 
     ```
