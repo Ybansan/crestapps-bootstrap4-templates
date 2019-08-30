@@ -17,15 +17,15 @@ Your Laravel project should have crestapps/laravel-code-generator package alread
     php artisan vendor:publish --provider="Ybansan\CrestappsBootstrap4Templates\CrestTemplatesServiceProvider"
     ```
 
-3. If you use CrestApps/laravel-code-generator version 2.2.*, update the Code Generator custom config file.
+3. Update the Code Generator custom config file.
 
-    * Edit the config file: [your_project_folder]\config\codegenerator_custom.php
+    * Edit the config file: [your_project_folder]\config\codegenerator_custom.php (version 2.2.*) or ...\laravel-code-generator.php (version 2.3.*)
     * Add this key:
 
     ```
     'laravel_collective_templates' => [
         'default-collective',
-        'default-collective-bootstrap4',
+        'collective-bootstrap4',
     ],
     ```
 
